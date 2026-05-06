@@ -1,0 +1,221 @@
+.footer {
+    background: transparent;
+    border-top: 1px solid rgba(255, 0, 110, 0.12);
+    color: #b0b0d0;
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.footer-top {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.2) 0%, rgba(26, 15, 61, 0.2) 100%);
+}
+
+.footer-brand {
+    flex: 0 0 auto;
+    max-width: 280px;
+    
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        margin-bottom: 0.75rem;
+        
+        .logo-icon {
+            font-size: 1.2rem;
+            color: #ff006e;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255, 0, 110, 0.4);
+        }
+        
+        .brand-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.3px;
+        }
+    }
+    
+    .brand-description {
+        font-size: 0.8rem;
+        color: #808090;
+        margin: 0;
+        line-height: 1.4;
+    }
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+    flex: 1;
+}
+
+.links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    
+    h5 {
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        margin: 0 0 0.5rem 0;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    li {
+        a {
+            color: #9090b0;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            
+            &:hover {
+                color: #ff006e;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    border-top: 1px solid rgba(255, 0, 110, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.3) 0%, rgba(26, 15, 61, 0.3) 100%);
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #707080;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.legal-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    
+    a {
+        color: #808090;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: color 0.2s ease;
+        
+        &:hover {
+            color: #ff006e;
+        }
+    }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 900px) {
+    .footer-top {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+    .footer-top {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .footer-brand {
+        max-width: 100%;
+    }
+    
+    .footer-links {
+        width: 100%;
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .copyright {
+        width: 100%;
+    }
+    
+    .legal-links {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .footer-top {
+        padding: 1.25rem 0.75rem;
+        gap: 1rem;
+    }
+    
+    .footer-links {
+        gap: 1.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .links-group {
+        h5 {
+            font-size: 0.75rem;
+        }
+        
+        a {
+            font-size: 0.75rem;
+        }
+    }
+    
+    .footer-bottom {
+        padding: 0.75rem 0.75rem;
+        gap: 0.75rem;
+    }
+    
+    .legal-links {
+        gap: 0.75rem;
+        
+        a {
+            font-size: 0.7rem;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+import { Component } from "react"
+import { unstable_setDevServerHooks } from "react-router"
+
+4 Layers architecture
+
+UI
+=>component
+=>pages 
+
+Hook    for managing state and api layers
+=>hooks 
+
+State frontend par user data save 
+=> auth .context .jsx  
+=> ai . context . jsx
+
+Api  for communication with backend  
+=>  services 
+     => auth.api.js 
